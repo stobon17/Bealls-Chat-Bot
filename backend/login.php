@@ -48,7 +48,7 @@ margin-bottom:15px;
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 <div class="container-fluid">
-  <a class="navbar-brand" href="index.html"><img src="../img/bealls_logo_edited.png" style="width:150px;height:50px"></a>
+  <a class="navbar-brand" href="../index.html"><img src="../img/bealls_logo_edited.png" style="width:150px;height:50px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
   </button>
