@@ -1,7 +1,7 @@
 <?php
   include_once 'header.php';
 ?>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!--- Image Slider -->
 <div id="slides" class="carousel slide" data-ride="carousel">
 <ul class="carousel-indicators">
@@ -20,11 +20,11 @@
 
   </div>
   <div class="carousel-item">
-      <img src="img/place_holder.jpg">
+      <img src="//images.beallsflorida.com/i/beallsflorida/MFHP_110820_Hero?fmt=jpeg">
     <div class="carousel-caption">
-      <h1 class="display-2">XXX</h1>
-      <h3>XXX</h3>
-      <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=">GO TO</button>
+      <h1 class="display-2">SHOES</h1>
+      <h3>BOGO 50% OFF</h3>
+      <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='shoes.php'">GO TO</button>
     </div>
   </div>
   <div class="carousel-item">

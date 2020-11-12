@@ -144,6 +144,7 @@ function loginUser($conn, $username, $pwd)
         session_start();
         $_SESSION["usersID"] = $userExists["usersID"];
         $_SESSION["username"] = $userExists["username"];
+        $_SESSION["adminstatus"] = $userExists["isAdmin"];
         header("location: ../index.php"); 
         exit();
     }
