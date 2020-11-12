@@ -149,3 +149,37 @@ function loginUser($conn, $username, $pwd)
         exit();
     }
 }
+
+//Reset functions
+function emptyReset($username, $pwd, $pwdRepeat)
+{
+    $result;
+    if (empty($username) || empty($pwd) || empty($pwdRepeat))
+    {
+        $result = true;
+    }
+    else{$result = false;}
+
+    return $result;
+}
+
+function resetUser($conn, $username, $pwd)
+{
+    $hashedpwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $query = "UPDATE users SET userPwd = ? WHERE username = ? or userEmail = ?";
+    
+    
+    //Protects Database integrity
+    $statement = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($statement, $query))
+    {
+        header("location: ../adminpage.php?error=queryfailed"); //Send to signup again
+        exit();
+    }
+    mysqli_stmt_bind_param($statement, "sss", $hashedpwd, $username, $username);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_close($statement);
+
+    header("location: ../adminpage.php?error=none");
+    exit();
+}
