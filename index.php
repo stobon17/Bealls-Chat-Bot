@@ -9,18 +9,18 @@
   <li data-target="#slides" data-slide-to="1"></li>
   <li data-target="#slides" data-slide-to="2"></li>
 </ul>
-<div class="carousel-inner">
+<div class="carousel-inner">  
   <div class="carousel-item active">
-      <img src="img/place_holder.jpg">
+      <img src="//images.beallsflorida.com/i/beallsflorida/MFHP_110820_Hero?fmt=jpeg">
       <div class="carousel-caption">
-          <h1 class="dvtitle">XXX</h1>
-          <h3 class="dvdesc"> XXX</h3>
+          <h1 class="dvtitle">SHOES</h1>
+          <h3 class="dvdesc"> BOGO 50% OFF</h3>
           <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=">GO TO</button>
       </div>
-
-  </div>
+    </div>
+  <!--
   <div class="carousel-item">
-      <img src="//images.beallsflorida.com/i/beallsflorida/MFHP_110820_Hero?fmt=jpeg">
+      <img src="img/place_holder.jpg">
     <div class="carousel-caption">
       <h1 class="display-2">SHOES</h1>
       <h3>BOGO 50% OFF</h3>
@@ -35,6 +35,7 @@
         <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=">GO TO</button>
       </div>
   </div>
+  -->
 </div>
 
 <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">

@@ -1,6 +1,7 @@
 <?php
   include_once 'header.php';
 ?>
+
   <!-- Page Content -->
   <div class="container">
 
@@ -8,17 +9,17 @@
 
       <div class="col-lg-3">
 
-        <h1 class="my-4">MEN</h1>
-  
+        <h1 class="my-4">Bath</h1>
 
       </div>
 
       <div class="col-lg-9">
 
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid" src="img/mens.png" alt="First slide">
+              <img class="d-block img-fluid" src="img/bath.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
@@ -33,29 +34,13 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/643-4226-0414-01-yyy/*UA-Sportstyle-Long-Sleeve-Hoodie*?$BR_thumbnail$" alt=""></a>
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-4877-9318-91-yyy/*Seashore-Serenade-Shower-Curtain*?$BR_thumbnail$" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Under Armour</a>
+                  <a href="#">Coastal Home</a>
                 </h4>
-                <h5>$30.00</h5>
-                <p class="card-text">UA Sportstyle Long Sleeve Hoodie</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/638-4722-9145-10-yyy/*Mens-Long-Sleeve-Vertical-Logo-T-Shirt*?$BR_thumbnail$" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Champion</a>
-                </h4>
-                <h5>$12.50</h5>
-                <p class="card-text">Mens Long Sleeve Vertical Logo T-Shirt</p>
+                <h5>$34.99</h5>
+                <p class="card-text">Seashore Serenade Shower Curtain</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -65,13 +50,61 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/640-8343-1205-40-yyy/*Mens-3-Quarter-Sleeve-Logo-Tee-by-Victory*?$BR_thumbnail$" alt=""></a>
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-4464-3830-46-yyy/*Geneva-Large-Toothbrush-Holder*?$BR_thumbnail$" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Florida Gators</a>
+                  <a href="#">Popular Bath Products</a>
                 </h4>
-                <h5>$14.00</h5>
-                <p class="card-text">Mens 3-Quarter Sleeve Logo Tee by Victory</p>
+                <h5>$21.99</h5>
+                <p class="card-text">Geneva Large Toothbrush Holder</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-4464-3819-46-yyy/*Geneva-Lotion-Pump*?$BR_thumbnail$" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Popular Bath Products</a>
+                </h4>
+                <h5>$21.99</h5>
+                <p class="card-text">Geneva Lotion Pump</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-5728-6892-18-yyy/*Oval-Vinyl-Tub-Mat*?$BR_thumbnail$" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Zenna Home</a>
+                </h4>
+                <h5>$9.99</h5>
+                <p class="card-text">Oval Vinyl Tub Mat</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-2911-0119-10-yyy/*White-Shower-Curtain*?$BR_thumbnail$" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Excell Home Fashions</a>
+                </h4>
+                <h5>$9.99</h5>
+                <p class="card-text">White Shower Curtain</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
@@ -81,48 +114,16 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/640-8343-9907-05-yyy/*Mens-Long-Sleeve-Heather-Logo-Tee-by-Victory*?$BR_thumbnail$" alt=""></a>
+              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/668-3142-2002-00-yyy/*Rainbow-Fish-Wastebasket*?$BR_thumbnail$" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Florida State</a>
+                  <a href="#">Creative Bath</a>
                 </h4>
-                <h5>$14.00</h5>
-                <p class="card-text">Mens Long Sleeve Heather Logo Tee by Victory</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9734; &#9734; &#9734; &#9734; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/635-6645-3223-72-yyy/*Mens-Cool-18-Pro-Flat-Front-Shorts*?$BR_thumbnail$" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Haggar</a>
-                </h4>
-                <h5>$26.99</h5>
-                <p class="card-text">Mens Cool 18 Pro Flat Front Shorts</p>
+                <h5>$40.00</h5>
+                <p class="card-text">Rainbow Fish Wastebasket</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://images.beallsflorida.com/i/beallsflorida/636-9273-5054-98-yyy/*Mens-505-Regular-Fit-Jeans*?$BR_thumbnail$" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Levi's</a>
-                </h4>
-                <h5>$35.70</h5>
-                <p class="card-text">Mens 505 Regular Fit Jeans</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9734; &#9734;</small>
               </div>
             </div>
           </div>
@@ -132,10 +133,10 @@
     </div>
   </div>
 
-
 </body>
+
   <!-- Footer -->
-<?php 
-  include_once 'footer.php';
+<?php
+  include 'footer.php';
 ?>
 </html>

@@ -56,10 +56,10 @@
               <a class="nav-link" href="index.php">HOME</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="home.php">FOR HOME</a>
+              <a class="nav-link" href="bed.php">BED</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="bnb.php">BED & BATH</a>
+              <a class="nav-link" href="bath.php">BATH</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="women.php">WOMEN</a>
