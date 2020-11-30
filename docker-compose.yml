@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  db:
+    image: mysql
+    volumes:
+      - /usr/local/dockerdata/cen_db:/var/lib/mysql
+    restart: awlays
+    environment:
+      MYSQL_ROOT_PASSWORD: CHANGEME
+      MYSQL_DATABASE: admin
+      MYSQL_USER: CHANGEME
+      MYSQL_PASSWORD: CHANGEME
+  web:
+    build: .
+    ports: 
+    - "80:80"
+    enironment:
+      VIRTUAL_HOST: katyl.info
+      LETSENCRYPT_HOST: katyl.info
+      LETSENCRYPT_EMAIL: katyl@katyl.info
+
