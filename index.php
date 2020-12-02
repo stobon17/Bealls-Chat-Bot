@@ -2,13 +2,9 @@
   include_once 'header.php';
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-<ul class="carousel-indicators">
-  <li data-target="#slides" data-slide-to="0" class="active"></li>
-  <li data-target="#slides" data-slide-to="1"></li>
-  <li data-target="#slides" data-slide-to="2"></li>
-</ul>
+<div id="slides" class="carousel slide" data-ride="carousel" >
 <div class="carousel-inner">  
   <div class="carousel-item active">
       <img src="//images.beallsflorida.com/i/beallsflorida/MFHP_110820_Hero?fmt=jpeg">
@@ -18,34 +14,7 @@
           <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=">GO TO</button>
       </div>
     </div>
-  <!--
-  <div class="carousel-item">
-      <img src="img/place_holder.jpg">
-    <div class="carousel-caption">
-      <h1 class="display-2">SHOES</h1>
-      <h3>BOGO 50% OFF</h3>
-      <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='shoes.php'">GO TO</button>
-    </div>
-  </div>
-  <div class="carousel-item">
-      <img src="img/place_holder.jpg">
-      <div class="carousel-caption">
-        <h1 class="display-2">XXX</h1>
-        <h3> XXX </h3>
-        <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=">GO TO</button>
-      </div>
-  </div>
-  -->
 </div>
-
-<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-   <span class="sr-only">Previous</span>
- </a>
- <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-   <span class="sr-only">Next</span>
- </a>
 </div>
 
 <!--- Welcome Section/Project Overview -->
