@@ -150,7 +150,7 @@ function loginUser($conn, $username, $pwd)
     }
 }
 
-//Reset functions
+//Admin Reset functions
 function emptyReset($username, $pwd, $pwdRepeat)
 {
     $result;
@@ -182,4 +182,58 @@ function resetUser($conn, $username, $pwd)
 
     header("location: ../adminpage.php?error=none");
     exit();
+}
+
+//User Reset functions
+function u_emptyReset($username, $pwd, $newPwd, $newPwdRepeat)
+{
+    $result;
+    if (empty($username) || empty($pwd) || empty($newPwd) || empty($newPwdRepeat))
+    {
+        $result = true;
+    }
+    else{$result = false;}
+
+    return $result;
+}
+
+function updatePassword($conn, $username, $pwd, $newPwd)
+{
+    $userExists = takenUserName($conn, $username, $username);
+
+    if ($userExists === false)
+    {
+        header("location: ../pwdchange.php?error=badcreds"); //Wrong login
+        exit();
+    }
+
+    //Get hashed password to verify
+    $pwdhashed = $userExists["userPwd"];
+    $checkPwd = password_verify($pwd, $pwdhashed);
+
+    if ($checkPwd === false)
+    {
+        header("location: ../pwdchange.php?error=badcreds"); //Wrong login
+        exit();
+    }
+    else
+    {
+        $query = "UPDATE users SET userPwd = ? WHERE username = ? or userEmail = ?";
+        
+        $newHashed = password_hash($newPwd, PASSWORD_DEFAULT);
+        
+        //Protects Database integrity
+        $statement = mysqli_stmt_init($conn);
+        if (!mysqli_stmt_prepare($statement, $query))
+        {
+            header("location: ../adminpage.php?error=queryfailed"); //Send to signup again
+            exit();
+        }
+        mysqli_stmt_bind_param($statement, "sss", $newHashed, $username, $username);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+
+        header("location: ../pwdchange.php?error=none");
+        exit();
+    }
 }
