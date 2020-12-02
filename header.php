@@ -38,7 +38,7 @@
                 else 
                 {
                     echo "<li class='nav-item active'><a class='nav-link' href='res/logout.php'>LOG OUT</a></li>";
-                    echo "<li class='nav-item active'><a class='nav-link' href=''>" . $_SESSION["username"] . "</a></li>";
+                    echo "<li class='nav-item active'><a class='nav-link' href='pwdchange.php'>" . $_SESSION["username"] . "</a></li>";
                 }
             }
            
