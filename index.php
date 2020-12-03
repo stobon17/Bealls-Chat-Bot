@@ -77,11 +77,11 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
-  chat-title="Bealls-chatbot"
-  agent-id="7f6e2cf2-0121-4497-84e7-6afbc9339ece"
+  chat-title="BeallsBot"
+  agent-id="96a5049c-6530-4915-a98b-28f2f8f7820b"
   language-code="en"
-  chat-icon="img/chat_bot_image.png"
 ></df-messenger>
+
 
 </body>
 <!-- Footer -->
