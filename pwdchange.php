@@ -50,7 +50,7 @@ margin-bottom:15px;
       <input type="password" placeholder="Password..." id="pwd" name="pwd"><br/><br/>
       <input type="password" placeholder="New Password..." id="newPwd" name="newPwd"><br/><br/>
       <input type="password" placeholder="Repeat New Password..." id="newPwdRepeat" name="newPwdRepeat"><br/><br/>
-      <input type="submit" value="Login" name="submit"> 
+      <input type="submit" value="Reset Password" name="submit"> 
     </form>
 
     <!-- Error/Success Messages -->
