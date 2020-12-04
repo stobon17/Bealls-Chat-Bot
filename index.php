@@ -60,6 +60,11 @@
           <h3>PHP</h3>
           <p>Backend Development Language.</p>
     </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fab fa-google"></i>
+          <h3>DialogFlow & Kommunicate.io</h3>
+          <p>Chat-Bot APIs</p>
+    </div>
 </div>
 <hr class="my-4">
 </div>

@@ -6,8 +6,8 @@ html, body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFFFF;
-  color: #0;
-  font-size: 120%
+  color: #000000;
+  font-size: 120%;
 }
 
 .footer {
@@ -59,6 +59,11 @@ html, body {
 }
 
 /*---Styling Three Column Section---*/
+.fa-google {
+  color: #4788F4;
+  font-size: 3em;
+  margin: 1rem;
+}
 .fa-html5 {
   color: #e32424;
   font-size: 3em;
@@ -84,6 +89,7 @@ html, body {
   font-size: 3em;
   margin: 1rem;
 }
+
 
 
 /*---Media Queries (for multiple screen sizes) --*/
@@ -207,7 +213,7 @@ th:last-child {
 
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
   color:#666B85;
   font-size:16px;
   font-weight:normal;
