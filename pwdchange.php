@@ -71,7 +71,8 @@ margin-bottom:15px;
       }
       else if ($_GET["error"] == "none")
       {
-          echo "<p style='text-align:center;'>Password reset successful!</p>";
+          echo "<p style='text-align:center;'>Password reset successful! Redirecting to login...</p>";
+          header('Refresh: 3; URL=login.php');
       }
     }
   ?>    
