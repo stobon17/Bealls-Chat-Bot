@@ -1,0 +1,6 @@
+# Set DB credentials.
+# Move to .env
+MYSQL_ROOT_PASSWORD=""
+MYSQL_DATABASE="admin"
+MYSQL_USER=""
+MYSQL_PASSWORD=""
