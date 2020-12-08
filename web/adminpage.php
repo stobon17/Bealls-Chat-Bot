@@ -60,6 +60,18 @@ cursor:pointer;
 border-radius:5px;
 margin-bottom:15px; 
 }
+.adminbutton {
+float: right;
+background-color: #6b5b95;
+color:#fff;
+border:2px solid #6b5b95;
+padding:10px;
+padding-right: 2em;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px; 
+}
     </style>
 </head>
 <html>  
@@ -96,6 +108,7 @@ margin-bottom:15px;
                     }
                 }
             ?>    
-    </section>       
+    </section>
+    <button class="adminbutton" onclick="document.location='admininfo.php'">More User Info</button>       
     </body>
 </html>
