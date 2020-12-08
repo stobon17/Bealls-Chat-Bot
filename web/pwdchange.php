@@ -54,7 +54,7 @@ margin-bottom:15px;
     </form>
 
     <!-- Error/Success Messages -->
-  <?php
+<?php
     if(isset($_GET["error"]))
     {
       if ($_GET["error"] == "emptyinput")
@@ -71,8 +71,12 @@ margin-bottom:15px;
       }
       else if ($_GET["error"] == "none")
       {
-          echo "<p style='text-align:center;'>Password reset successful! Redirecting to login...</p>";
-          header('Refresh: 3; URL=login.php');
+        echo("<script>
+        setTimeout(function(){
+           window.location.href = 'login.php';
+        }, 3000);
+     </script>");
+        echo "<p style='text-align:center;'>Password reset successful! Redirecting to login...</p>";
       }
     }
   ?>    
