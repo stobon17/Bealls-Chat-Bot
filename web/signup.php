@@ -78,6 +78,7 @@ margin-bottom:15px;
       else if ($_GET["error"] == "none")
       {
         echo "<p style='text-align:center;'>You have signed up successfully!</p>";
+        header('Refresh: 3; URL=login.php');
       }
       
     }
