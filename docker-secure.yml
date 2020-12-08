@@ -1,0 +1,53 @@
+version: "3"
+services:
+  db:
+    image: mysql 
+    volumes:
+      - /usr/local/dockerdata/cen_db:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
+      - "MYSQL_DATABASE=admin"
+      - "MYSQL_USER=${MYSQL_USER}"
+      - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
+  web:
+    build: ./web
+    restart: always
+    environment:
+      - "VIRTUAL_HOST=katyl.info"
+      - "LETSENCRYPT_HOST=katyl.info"
+      - "LETSENCRYPT_EMAIL=katyl@atyl.info"
+  nginx:
+    image: jwilder/nginx-proxy
+    ports: 
+      - "80:80"
+      - "443:443"
+    volumes:
+      - conf:/etc/nginx/conf.d
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - dhparam:/etc/nginx/dhparam
+      - certs:/etc/nginx/certs:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    labels:
+      - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
+  letsencrypt:
+     image: jrcs/letsencrypt-nginx-proxy-companion
+     environment:
+      - "NGINX_PROXY_CONTAINER=nginx"
+     volumes:
+      - html:/usr/share/nginx/html
+      - conf:/etc/nginx/conf.d
+      - vhost:/etc/nginx/vhost.d
+      - dhparam:/etc/nginx/dhparam
+      - certs:/etc/nginx/certs:rw
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+volumes:
+  conf:
+  vhost:
+  html:
+  dhparam:
+  certs:
+  acme:
