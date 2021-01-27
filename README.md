@@ -13,3 +13,9 @@ The service can be run by using the command `docker-compose up`. The `-d` flag c
 The service can then be accessed at port 80 on device running docker.
 
 An alternative configuration is provided which utilizes the ACME protocol to automatically obtain a TLS certificate for the domain being hosted. When being run in this configuration, the docker-secured.yml configuration must be updated to include the FQDN of the server as LETSENCRYPT_HOST and VIRTUAL_HOST in all references. To utilize the alternate configuration `docker-compose -f docker-secure.yml up` should be run. 
+
+## Website Showcase
+
+![Admin Login and userinfo](https://github.com/stobon17/Bealls-Chat-Bot/blob/main/web/img/Fall20_ForWhomTheBeallTolls_1.gif?raw=true)
+![Admin Login and userinfo](https://github.com/stobon17/Bealls-Chat-Bot/blob/main/web/img/Fall20_ForWhomTheBeallTolls_2.gif?raw=true)
+![Admin Login and userinfo](https://github.com/stobon17/Bealls-Chat-Bot/blob/main/web/img/Fall20_ForWhomTheBeallTolls_3.gif?raw=true)
